@@ -1,9 +1,12 @@
+# docker
+# ubuntu:20.04
+
 #!bin/bash
 apt update 
 apt upgrade -y 
 
 # install python
-apt install python3.9 python3-pip vim -y 
+apt install python3.9 python3-pip python3.9-venv vim ssh git -y 
 
 # Python3.8 -> Python3.9
 update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9 9 
