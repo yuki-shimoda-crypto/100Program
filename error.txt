@@ -1,0 +1,573 @@
+----> Building on the Heroku-22 stack
+
+-----> Determining which buildpack to use for this app
+
+-----> Python app detected
+
+-----> Using Python version specified in runtime.txt
+
+-----> Installing python-3.9.14
+
+-----> Installing pip 22.2.2, setuptools 63.4.3 and wheel 0.37.1
+
+-----> Installing SQLite3
+
+-----> Installing requirements with pip
+
+       Collecting asgiref==3.5.2
+
+         Downloading asgiref-3.5.2-py3-none-any.whl (22 kB)
+
+       Collecting certifi==2019.11.28
+
+         Downloading certifi-2019.11.28-py2.py3-none-any.whl (156 kB)
+
+       Collecting chardet==3.0.4
+
+         Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+
+       Collecting dbus-python==1.2.16
+
+         Downloading dbus-python-1.2.16.tar.gz (576 kB)
+
+         Preparing metadata (setup.py): started
+
+         Preparing metadata (setup.py): finished with status 'done'
+
+       Collecting distro==1.4.0
+
+         Downloading distro-1.4.0-py2.py3-none-any.whl (17 kB)
+
+       Collecting Django==4.1.1
+
+         Downloading Django-4.1.1-py3-none-any.whl (8.1 MB)
+
+       Collecting idna==2.8
+
+         Downloading idna-2.8-py2.py3-none-any.whl (58 kB)
+
+       Collecting Janome==0.4.2
+
+         Downloading Janome-0.4.2-py2.py3-none-any.whl (19.7 MB)
+
+       Collecting PyGObject==3.36.0
+
+         Downloading PyGObject-3.36.0.tar.gz (714 kB)
+
+         Installing build dependencies: started
+
+         Installing build dependencies: finished with status 'done'
+
+         Getting requirements to build wheel: started
+
+         Getting requirements to build wheel: finished with status 'done'
+
+         Preparing metadata (pyproject.toml): started
+
+         Preparing metadata (pyproject.toml): finished with status 'done'
+
+       Collecting requests==2.22.0
+
+         Downloading requests-2.22.0-py2.py3-none-any.whl (57 kB)
+
+       Collecting six==1.14.0
+
+         Downloading six-1.14.0-py2.py3-none-any.whl (10 kB)
+
+       Collecting sqlparse==0.4.2
+
+         Downloading sqlparse-0.4.2-py3-none-any.whl (42 kB)
+
+       Collecting ssh-import-id==5.10
+
+         Downloading ssh-import-id-5.10.tar.gz (6.7 kB)
+
+         Preparing metadata (setup.py): started
+
+         Preparing metadata (setup.py): finished with status 'done'
+
+       Collecting urllib3==1.25.8
+
+         Downloading urllib3-1.25.8-py2.py3-none-any.whl (125 kB)
+
+       Collecting pycairo>=1.11.1
+
+         Downloading pycairo-1.21.0.tar.gz (340 kB)
+
+         Installing build dependencies: started
+
+         Installing build dependencies: finished with status 'done'
+
+         Getting requirements to build wheel: started
+
+         Getting requirements to build wheel: finished with status 'done'
+
+         Preparing metadata (pyproject.toml): started
+
+         Preparing metadata (pyproject.toml): finished with status 'done'
+
+       Building wheels for collected packages: dbus-python, PyGObject, ssh-import-id, pycairo
+
+         Building wheel for dbus-python (setup.py): started
+
+         Building wheel for dbus-python (setup.py): finished with status 'error'
+
+         error: subprocess-exited-with-error
+
+         
+
+         × python setup.py bdist_wheel did not run successfully.
+
+         │ exit code: 1
+
+         ╰─> [151 lines of output]
+
+             running bdist_wheel
+
+             running build
+
+             creating /tmp/pip-install-esnp5c0b/dbus-python_8ab5a88f40564d078b6968ca7fad6c79/build
+
+             creating /tmp/pip-install-esnp5c0b/dbus-python_8ab5a88f40564d078b6968ca7fad6c79/build/temp.linux-x86_64-cpython-39
+
+             checking whether make supports nested variables... yes
+
+             checking whether to enable maintainer-specific portions of Makefiles... no
+
+             checking for gcc... gcc
+
+             checking whether the C compiler works... yes
+
+             checking for C compiler default output file name... a.out
+
+             checking for suffix of executables...
+
+             checking whether we are cross compiling... no
+
+             checking for suffix of object files... o
+
+             checking whether we are using the GNU C compiler... yes
+
+             checking whether gcc accepts -g... yes
+
+             checking for gcc option to accept ISO C89... none needed
+
+             checking whether gcc understands -c and -o together... yes
+
+             checking how to run the C preprocessor... gcc -E
+
+             checking for grep that handles long lines and -e... /usr/bin/grep
+
+             checking for egrep... /usr/bin/grep -E
+
+             checking for ANSI C header files... yes
+
+             checking for sys/types.h... yes
+
+             checking for sys/stat.h... yes
+
+             checking for stdlib.h... yes
+
+             checking for string.h... yes
+
+             checking for memory.h... yes
+
+             checking for strings.h... yes
+
+             checking for inttypes.h... yes
+
+             checking for stdint.h... yes
+
+             checking for unistd.h... yes
+
+             checking minix/config.h usability... no
+
+             checking minix/config.h presence... no
+
+             checking for minix/config.h... no
+
+             checking whether it is safe to define __EXTENSIONS__... yes
+
+             checking for a BSD-compatible install... /usr/bin/install -c
+
+             checking whether build environment is sane... yes
+
+             checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+
+             checking for gawk... no
+
+             checking for mawk... mawk
+
+             checking whether make sets $(MAKE)... yes
+
+             checking whether make supports the include directive... yes (GNU style)
+
+             checking whether UID '39455' is supported by ustar format... yes
+
+             checking whether GID '39455' is supported by ustar format... yes
+
+             checking how to create a ustar tar archive... gnutar
+
+             checking dependency style of gcc... gcc3
+
+             checking build system type... x86_64-pc-linux-gnu
+
+             checking host system type... x86_64-pc-linux-gnu
+
+             checking for native Windows host... no
+
+             checking how to print strings... printf
+
+             checking for a sed that does not truncate output... /usr/bin/sed
+
+             checking for fgrep... /usr/bin/grep -F
+
+             checking for ld used by gcc... /usr/bin/ld
+
+             checking if the linker (/usr/bin/ld) is GNU ld... yes
+
+             checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+
+             checking the name lister (/usr/bin/nm -B) interface... BSD nm
+
+             checking whether ln -s works... yes
+
+             checking the maximum length of command line arguments... 3145728
+
+             checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+
+             checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+
+             checking for /usr/bin/ld option to reload object files... -r
+
+             checking for objdump... objdump
+
+             checking how to recognize dependent libraries... pass_all
+
+             checking for dlltool... no
+
+             checking how to associate runtime and link libraries... printf %s\n
+
+             checking for ar... ar
+
+             checking for archiver @FILE support... @
+
+             checking for strip... strip
+
+             checking for ranlib... ranlib
+
+             checking command to parse /usr/bin/nm -B output from gcc object... ok
+
+             checking for sysroot... no
+
+             checking for a working dd... /usr/bin/dd
+
+             checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+
+             checking for mt... no
+
+             checking if : is a manifest tool... no
+
+             checking for dlfcn.h... yes
+
+             checking for objdir... .libs
+
+             checking if gcc supports -fno-rtti -fno-exceptions... no
+
+             checking for gcc option to produce PIC... -fPIC -DPIC
+
+             checking if gcc PIC flag -fPIC -DPIC works... yes
+
+             checking if gcc static flag -static works... yes
+
+             checking if gcc supports -c -o file.o... yes
+
+             checking if gcc supports -c -o file.o... (cached) yes
+
+             checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+
+             checking whether -lc should be explicitly linked in... no
+
+             checking dynamic linker characteristics... GNU/Linux ld.so
+
+             checking how to hardcode library paths into programs... immediate
+
+             checking whether stripping libraries is possible... yes
+
+             checking if libtool supports shared libraries... yes
+
+             checking whether to build shared libraries... yes
+
+             checking whether to build static libraries... no
+
+             checking for inline... inline
+
+             checking for gawk... (cached) mawk
+
+             checking for python... /app/.heroku/python/bin/python
+
+             checking for a version of Python >= '2.1.0'... yes
+
+             checking for a version of Python >= '2.7'... yes
+
+             checking for the distutils Python package... yes
+
+             checking for Python include path... -I/app/.heroku/python/include/python3.9
+
+             checking for Python library path... -L/app/.heroku/python/lib -lpython3.9
+
+             checking for Python site-packages path... /app/.heroku/python/lib/python3.9/site-packages
+
+             checking python extra libraries... -lcrypt -ldl  -lm -lm
+
+             checking python extra linking flags... -Xlinker -export-dynamic
+
+             checking consistency of all components of python development environment... yes
+
+             checking for python version... 3.9
+
+             checking for python platform... linux
+
+             checking for python script directory... ${prefix}/lib/python3.9/site-packages
+
+             checking for python extension module directory... ${exec_prefix}/lib/python3.9/site-packages
+
+             checking python module: sphinx... no
+
+             checking python module: sphinx_rtd_theme... no
+
+             checking for dbus-run-session... dbus-run-session
+
+             checking for pkg-config... /usr/bin/pkg-config
+
+             checking pkg-config is at least version 0.9.0... yes
+
+             checking for DBUS... no
+
+             configure: error: Package requirements (dbus-1 >= 1.8) were not met:
+
+             
+
+             No package 'dbus-1' found
+
+             
+
+             Consider adjusting the PKG_CONFIG_PATH environment variable if you
+
+             installed software in a non-standard prefix.
+
+             
+
+             Alternatively, you may set the environment variables DBUS_CFLAGS
+
+             and DBUS_LIBS to avoid the need to call pkg-config.
+
+             See the pkg-config man page for more details.
+
+             Traceback (most recent call last):
+
+               File "<string>", line 2, in <module>
+
+               File "<pip-setuptools-caller>", line 34, in <module>
+
+               File "/tmp/pip-install-esnp5c0b/dbus-python_8ab5a88f40564d078b6968ca7fad6c79/setup.py", line 85, in <module>
+
+                 setup(
+
+               File "/app/.heroku/python/lib/python3.9/site-packages/setuptools/__init__.py", line 87, in setup
+
+                 return distutils.core.setup(**attrs)
+
+               File "/app/.heroku/python/lib/python3.9/site-packages/setuptools/_distutils/core.py", line 185, in setup
+
+                 return run_commands(dist)
+
+               File "/app/.heroku/python/lib/python3.9/site-packages/setuptools/_distutils/core.py", line 201, in run_commands
+
+                 dist.run_commands()
+
+               File "/app/.heroku/python/lib/python3.9/site-packages/setuptools/_distutils/dist.py", line 973, in run_commands
+
+                 self.run_command(cmd)
+
+               File "/app/.heroku/python/lib/python3.9/site-packages/setuptools/dist.py", line 1217, in run_command
+
+                 super().run_command(command)
+
+               File "/app/.heroku/python/lib/python3.9/site-packages/setuptools/_distutils/dist.py", line 992, in run_command
+
+                 cmd_obj.run()
+
+               File "/app/.heroku/python/lib/python3.9/site-packages/wheel/bdist_wheel.py", line 299, in run
+
+                 self.run_command('build')
+
+               File "/app/.heroku/python/lib/python3.9/site-packages/setuptools/_distutils/cmd.py", line 319, in run_command
+
+                 self.distribution.run_command(command)
+
+               File "/app/.heroku/python/lib/python3.9/site-packages/setuptools/dist.py", line 1217, in run_command
+
+                 super().run_command(command)
+
+               File "/app/.heroku/python/lib/python3.9/site-packages/setuptools/_distutils/dist.py", line 992, in run_command
+
+                 cmd_obj.run()
+
+               File "/tmp/pip-install-esnp5c0b/dbus-python_8ab5a88f40564d078b6968ca7fad6c79/setup.py", line 56, in run
+
+                 subprocess.check_call([
+
+               File "/app/.heroku/python/lib/python3.9/subprocess.py", line 373, in check_call
+
+                 raise CalledProcessError(retcode, cmd)
+
+             subprocess.CalledProcessError: Command '['/tmp/pip-install-esnp5c0b/dbus-python_8ab5a88f40564d078b6968ca7fad6c79/configure', '--disable-maintainer-mode', 'PYTHON=/app/.heroku/python/bin/python', '--prefix=/tmp/pip-install-esnp5c0b/dbus-python_8ab5a88f40564d078b6968ca7fad6c79/build/temp.linux-x86_64-cpython-39/prefix']' returned non-zero exit status 1.
+
+             [end of output]
+
+         
+
+         note: This error originates from a subprocess, and is likely not a problem with pip.
+
+         ERROR: Failed building wheel for dbus-python
+
+         Running setup.py clean for dbus-python
+
+         Building wheel for PyGObject (pyproject.toml): started
+
+         Building wheel for PyGObject (pyproject.toml): finished with status 'error'
+
+         error: subprocess-exited-with-error
+
+         
+
+         × Building wheel for PyGObject (pyproject.toml) did not run successfully.
+
+         │ exit code: 1
+
+         ╰─> [45 lines of output]
+
+             running bdist_wheel
+
+             running build
+
+             running build_py
+
+             creating build
+
+             creating build/lib.linux-x86_64-cpython-39
+
+             creating build/lib.linux-x86_64-cpython-39/pygtkcompat
+
+             copying pygtkcompat/pygtkcompat.py -> build/lib.linux-x86_64-cpython-39/pygtkcompat
+
+             copying pygtkcompat/generictreemodel.py -> build/lib.linux-x86_64-cpython-39/pygtkcompat
+
+             copying pygtkcompat/__init__.py -> build/lib.linux-x86_64-cpython-39/pygtkcompat
+
+             creating build/lib.linux-x86_64-cpython-39/gi
+
+             copying gi/_compat.py -> build/lib.linux-x86_64-cpython-39/gi
+
+             copying gi/_option.py -> build/lib.linux-x86_64-cpython-39/gi
+
+             copying gi/pygtkcompat.py -> build/lib.linux-x86_64-cpython-39/gi
+
+             copying gi/_error.py -> build/lib.linux-x86_64-cpython-39/gi
+
+             copying gi/module.py -> build/lib.linux-x86_64-cpython-39/gi
+
+             copying gi/_ossighelper.py -> build/lib.linux-x86_64-cpython-39/gi
+
+             copying gi/_constants.py -> build/lib.linux-x86_64-cpython-39/gi
+
+             copying gi/_propertyhelper.py -> build/lib.linux-x86_64-cpython-39/gi
+
+             copying gi/__init__.py -> build/lib.linux-x86_64-cpython-39/gi
+
+             copying gi/importer.py -> build/lib.linux-x86_64-cpython-39/gi
+
+             copying gi/_signalhelper.py -> build/lib.linux-x86_64-cpython-39/gi
+
+             copying gi/types.py -> build/lib.linux-x86_64-cpython-39/gi
+
+             copying gi/docstring.py -> build/lib.linux-x86_64-cpython-39/gi
+
+             copying gi/_gtktemplate.py -> build/lib.linux-x86_64-cpython-39/gi
+
+             creating build/lib.linux-x86_64-cpython-39/gi/repository
+
+             copying gi/repository/__init__.py -> build/lib.linux-x86_64-cpython-39/gi/repository
+
+             creating build/lib.linux-x86_64-cpython-39/gi/overrides
+
+             copying gi/overrides/GdkPixbuf.py -> build/lib.linux-x86_64-cpython-39/gi/overrides
+
+             copying gi/overrides/Gtk.py -> build/lib.linux-x86_64-cpython-39/gi/overrides
+
+             copying gi/overrides/GLib.py -> build/lib.linux-x86_64-cpython-39/gi/overrides
+
+             copying gi/overrides/Pango.py -> build/lib.linux-x86_64-cpython-39/gi/overrides
+
+             copying gi/overrides/GObject.py -> build/lib.linux-x86_64-cpython-39/gi/overrides
+
+             copying gi/overrides/Gio.py -> build/lib.linux-x86_64-cpython-39/gi/overrides
+
+             copying gi/overrides/__init__.py -> build/lib.linux-x86_64-cpython-39/gi/overrides
+
+             copying gi/overrides/GIMarshallingTests.py -> build/lib.linux-x86_64-cpython-39/gi/overrides
+
+             copying gi/overrides/keysyms.py -> build/lib.linux-x86_64-cpython-39/gi/overrides
+
+             copying gi/overrides/Gdk.py -> build/lib.linux-x86_64-cpython-39/gi/overrides
+
+             running build_ext
+
+             Package gobject-introspection-1.0 was not found in the pkg-config search path.
+
+             Perhaps you should add the directory containing `gobject-introspection-1.0.pc'
+
+             to the PKG_CONFIG_PATH environment variable
+
+             No package 'gobject-introspection-1.0' found
+
+             Command '('pkg-config', '--print-errors', '--exists', 'gobject-introspection-1.0 >= 1.46.0')' returned non-zero exit status 1.
+
+             
+
+             Try installing it with: 'sudo apt install libgirepository1.0-dev'
+
+             [end of output]
+
+         
+
+         note: This error originates from a subprocess, and is likely not a problem with pip.
+
+         ERROR: Failed building wheel for PyGObject
+
+         Building wheel for ssh-import-id (setup.py): started
+
+         Building wheel for ssh-import-id (setup.py): finished with status 'done'
+
+         Created wheel for ssh-import-id: filename=ssh_import_id-5.10-py3-none-any.whl size=8062 sha256=37d854dac1f263f868d81f16fd3dd327bfae746387e75a9bae3c428215157808
+
+         Stored in directory: /tmp/pip-ephem-wheel-cache-af17_rzd/wheels/80/1f/23/0f5d689fd26d5b2881fa7d733e70c9486c2e5d3c6f6aca458b
+
+         Building wheel for pycairo (pyproject.toml): started
+
+         Building wheel for pycairo (pyproject.toml): finished with status 'done'
+
+         Created wheel for pycairo: filename=pycairo-1.21.0-cp39-cp39-linux_x86_64.whl size=134461 sha256=499db940853e921c9454a5ec9525cbe7b6ca649e94592197a4660547bacaf8b3
+
+         Stored in directory: /tmp/pip-ephem-wheel-cache-af17_rzd/wheels/0f/cd/70/dce236cd2318a543f9d2a78fa2c6e7170c575c203734885d25
+
+       Successfully built ssh-import-id pycairo
+
+       Failed to build dbus-python PyGObject
+
+       ERROR: Could not build wheels for PyGObject, which is required to install pyproject.toml-based projects
+
+ !     Push rejected, failed to compile Python app.
+
+ !     Push failed
