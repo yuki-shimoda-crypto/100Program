@@ -1,0 +1,7 @@
+<p>読み込みたい文章を入れてください</p>
+    
+<form action="{% url 'result' %}" method="POST">
+  {% csrf_token %}
+  {{ sentence.as_p }}
+ <p> <button type="submit">決定</button></p>
+</form>
